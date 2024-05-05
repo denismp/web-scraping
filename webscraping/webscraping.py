@@ -12,11 +12,11 @@ class Webscraping():
 
     def get_web_data(self) -> str:
         response = requests.get(self.url)
-        #print(response.text)
+        print(response.text)
         return response.text
 
     def parse_html(self, html: str) -> BeautifulSoup:
-        soup = BeautifulSoup(html,'html.parser')
+        soup = BeautifulSoup(html, 'html.parser')
         return soup
 
         
